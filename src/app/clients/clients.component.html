@@ -1,0 +1,10 @@
+<div class="clients-container">
+    <h2>Klienci</h2>
+    <div class="clients-list">
+      <div *ngFor="let client of clients" class="client-card">
+        <img [src]="client.imageUrl" alt="{{ client.name }}" class="client-image">
+        <h3>{{ client.name }}</h3>
+        <p>{{ client.description }}</p>
+      </div>
+    </div>
+  </div>

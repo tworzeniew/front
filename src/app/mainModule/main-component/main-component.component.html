@@ -1,0 +1,41 @@
+<div class="main-container">
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Strona główna</a></li>
+      <li><a href="/about">O nas</a></li>
+      <li><a href="/contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <img src="https://www.elmhurst.edu/wp-content/uploads/2022/02/masters-information-technology-salary-illustration.jpg" alt="Obrazek" class="main-image" />
+  <h1>Sprawozdanie 2 z Angulara</h1>
+  <p>Tworzenie serwisów Web 2.0</p>
+
+  <ul>
+    <li *ngFor="let book of books" (click)="onSelectBook(book)">
+      {{ book.title }} - {{ book.author }}
+    </li>
+  </ul>
+
+  <app-book-detail
+    [book]="selectedBook"
+    (updatedBook)="onUpdateBook($event)"
+  ></app-book-detail>
+
+  <h2>Lista samochodów</h2>
+  <ul class="cars">
+    <li *ngFor="let car of cars" (click)="onSelectCar(car)">
+      {{ car.brand }} {{ car.model }}
+    </li>
+  </ul>
+
+  <app-car-detail
+    [car]="selectedCar"
+    (updatedCar)="onUpdateCar($event)"
+  ></app-car-detail>
+
+  <h2>Własne metody w komponentach</h2>
+  <app-average-grade [grades]="grades"></app-average-grade>
+  <h2>Dwa dodatkowe komponenty</h2>
+  <app-student-list></app-student-list>
+</div>

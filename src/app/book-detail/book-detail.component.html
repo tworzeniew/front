@@ -1,0 +1,14 @@
+<div *ngIf="book">
+    <h2>Podrzędny komponent</h2>
+    <form #bookForm="ngForm" (ngSubmit)="onUpdateBook(bookForm.value)">
+      <label>
+        Title:
+        <input [(ngModel)]="book.title" name="title" required />
+      </label>
+      <label>
+        Author:
+        <input [(ngModel)]="book.author" name="author" required />
+      </label>
+      <button type="submit">Update book</button>
+    </form>
+  </div>

@@ -1,0 +1,20 @@
+<div class="average-grade-container">
+    <div>
+      <h3>Średnia ocen:</h3>
+      <p>{{ calculateAverage() }}</p>
+    </div>
+  
+    <div class="list">
+      <h3>Lista ocen:</h3>
+      <ul>
+        <li *ngFor="let grade of grades">{{ grade }}</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <h3>Dodaj ocenę:</h3>
+  <form (ngSubmit)="addGrade(newGrade.value)">
+    <input #newGrade type="number" placeholder="Nowa ocena" required />
+    <button type="submit">Dodaj</button>
+  </form>
+  </div>

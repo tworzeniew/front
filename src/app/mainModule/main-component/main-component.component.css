@@ -1,0 +1,109 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #222;
+  color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: #333;
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ff6633;
+}
+
+.main-image {
+  width: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ff6633;
+}
+
+.author-info {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.average-grade {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.student-list {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cars{
+  margin-top:20px;
+}

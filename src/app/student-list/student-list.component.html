@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let student of students" (click)="selectStudent(student.id)">
+      {{ student.firstName }} {{ student.lastName }}
+    </li>
+  </ul>
+  
+  <app-subject-grades [studentId]="selectedStudentId"></app-subject-grades>

@@ -1,0 +1,9 @@
+.average-grade-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.list {
+  margin-left: 15px;
+}

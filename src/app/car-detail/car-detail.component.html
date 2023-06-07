@@ -1,0 +1,14 @@
+<div *ngIf="car">
+    <h2>Edit car</h2>
+    <form #carForm="ngForm" (ngSubmit)="onUpdateCar(carForm.value)">
+      <label>
+        Brand:
+        <input [(ngModel)]="car.brand" name="brand" required />
+      </label>
+      <label>
+        Model:
+        <input [(ngModel)]="car.model" name="model" required />
+      </label>
+      <button type="submit">Update car</button>
+    </form>
+  </div>
